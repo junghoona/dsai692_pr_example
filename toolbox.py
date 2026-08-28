@@ -41,3 +41,12 @@ def main():
 
 if __name__ == "__main__":
     main()
+# --- IMPORT BLOCK --------------------------------------------------
+# Add your import at the END of this block, on the line above the dashes.
+from tools.shout import shout
+from tools.wordcount import word_count # <-- your line goes last
+# -------------------------------------------------------------------
+TOOLS = {
+"shout": shout,
+"wordcount": word_count, # <-- your line goes last
+}
