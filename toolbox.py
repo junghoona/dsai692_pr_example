@@ -14,6 +14,9 @@ import sys
 # --- IMPORT BLOCK --------------------------------------------------
 # Add your import at the END of this block, on the line above the dashes.
 from tools.shout import shout
+from tools.wordcount import word_count
+from tools.initials import initials
+from tools.reverse import reverse
 # -------------------------------------------------------------------
 
 
@@ -21,6 +24,9 @@ from tools.shout import shout
 # Add your tool at the END of this dict, on the line above the closing brace.
 TOOLS = {
     "shout": shout,
+    "wordcount": word_count,
+    "initials": initials,
+    "reverse": reverse,
 }
 # -------------------------------------------------------------------
 
@@ -41,12 +47,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-# --- IMPORT BLOCK --------------------------------------------------
-# Add your import at the END of this block, on the line above the dashes.
-from tools.shout import shout
-from tools.wordcount import word_count # <-- your line goes last
-# -------------------------------------------------------------------
-TOOLS = {
-"shout": shout,
-"wordcount": word_count, # <-- your line goes last
-}
